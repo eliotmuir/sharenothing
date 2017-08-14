@@ -1,0 +1,15 @@
+{
+    "LocalDependencies": [
+        "convert.lua"
+    ],
+    "LuaDependencies": [
+        "iguana.project"
+    ],
+    "OtherDependencies": [],
+    "timestamp": "1502675453",
+    "version_info": {
+        "build": 0,
+        "major": 6,
+        "minor": 0
+    }
+}

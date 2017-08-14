@@ -1,0 +1,25 @@
+<channel
+   name="Converter"
+   guid="0B21069EB82C335C8E5C729D19541D5B"
+   description="When we have shared dependencies in a translator project the risk exists that if these dependencies are changed that it will break the project.&#xD;&#xA;&#xD;&#xA;This channel has a library which takes a translator zip file and copies all the &quot;shared&quot; and &quot;other&quot; dependencies into local dependencies.  It emits a zip file."
+   start_automatically="false"
+   logging_level="1"
+   use_message_filter="false">
+   <to_channel>
+   </to_channel>
+   <from_http
+      type="mapper"
+      guid="Converter-FromHTTP-JvMvWJeUgAHPIQ"
+      commit_id="a83692e66f4017e7b27db91e7fe5b68cc770150b"
+      commit_comment="Converted over to work on deploy project."
+      mapper_url_path="convert"/>
+   <message_filter
+      filter_after_logging="false"
+      log_pre_post_filter_message="true"
+      filter_vmd_path=""
+      transformation_mode="0"
+      scripted_transformation_configuration_name="default"
+      error_handling="0"
+      use_translator_filter="true">
+   </message_filter>
+</channel>
